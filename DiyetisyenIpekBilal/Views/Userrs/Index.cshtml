@@ -1,0 +1,72 @@
+﻿@model IEnumerable<DiyetisyenIpekBilal.Models.Userr>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div class="row">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Resim
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Surname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Emaill)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rolee)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+             <img src="@item.ImagePath.Replace("wwwroot/","")" width="100" height="100">
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emaill)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rolee.RoleeName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UserrID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UserrID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UserrID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+

@@ -1,0 +1,270 @@
+﻿@model DiyetisyenIpekBilal.ViewModel.HomeViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EnviShare</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="shortcut icon" href="~/DytIpekTemplate/EnviShare/assets/css/favicon.png">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/animate.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/aos.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/lightcase.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/slick.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="~/DytIpekTemplate/EnviShare/assets/css/style.css">
+</head>
+<body>
+    <!-- search area -->
+    <!-- search area -->
+
+    <div class="body-wrapper">
+        <!-- mobile menu start -->
+        <div class="mobile-menu">
+            <nav class="mobile-header primary-menu d-xl-none">
+                
+                <div class="header-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <nav class="menu">
+                <div class="mobile-menu-area d-xl-none">
+                    <div class="mobile-menu-area-inner" id="scrollbar">
+                        <ul class="m-menu">
+                            <li>
+                                <a asp-controller="Home" asp-action="Index">Anasayfa</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Home" asp-action="AboutMee">Hakkımda</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Home" asp-action="Achievements">Başarılar</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Home" asp-action="Recipes">  Tarifler</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Home" asp-action="Comments">Yorumlar</a>
+                            </li>
+                                <a asp-controller="Home" asp-action="Contact">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- moboli menu ending -->
+      
+
+        <!-- header section start -->
+        <header class="header-section d-xl-block d-none">
+            <div class="header-area">
+                <div class="logo">
+                    <a asp-controller="Home" asp-action="Index"><img src="~/DytIpekTemplate/EnviShare/assets/images/logo/WhatsApp Image 2022-03-28 at 8.36.10 PM.jpeg" alt="logo" ></a>
+                </div>
+                <div class="main-menu d-none d-xl-block">
+                    <div class="top">
+                      
+                  
+                    </div>
+
+                    <ul class="menu">
+                        <li>
+                            <a asp-controller="Home" asp-action="Index" >Anasayfa</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="AboutMee">Hakkımda</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Achievements">Başarılar</a>
+                        </li>
+                       @* <li>
+                            <a href="#0">Videolar</a>
+                        </li>*@
+                        <li>
+                            <a asp-controller="Home" asp-action="Recipes" >Tarifler</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Comments">Yorumlar</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Contact">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="right-side d-none d-xl-flex">
+                    <li class="cart">
+                        <div class="cart-content">
+                            <div class="cart-item">
+                                <div class="cart-img">
+                                    <a href="#"><img src="~/DytIpekTemplate/EnviShare/assets/images/header/shope/01.jpg" alt="cart"></a>
+                                </div>
+                                <div class="cart-des">
+                                    <a href="#">Product Title Hore</a>
+                                    <p>$20.00</p>
+                                </div>
+                                <div class="cart-btn">
+                                    <a href="#"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="cart-img">
+                                    <a href="#"><img src="~/DytIpekTemplate/EnviShare/assets/images/header/shope/02.jpg" alt="cart"></a>
+                                </div>
+                                <div class="cart-des">
+                                    <a href="#">Product Title Hore</a>
+                                    <p>$20.00</p>
+                                </div>
+                                <div class="cart-btn">
+                                    <a href="#"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                            <div class="cart-bottom">
+                                <div class="cart-subtotal">
+                                    <p>Total: <b class="float-right">$40.00</b></p>
+                                </div>
+                                <div class="cart-action">
+                                    <button type="submit" class="button">View cart</button>
+                                    <button type="submit" class="button">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header section ending -->
+
+
+        @RenderBody()
+        
+
+
+        <!-- footer section start here -->
+        <footer class="footer-section">
+            <div class="footer-top" style="background-image: url(~/DytIpekTemplate/EnviShare/assets/images/footer/bg-image.jpg); background-position: center bottom; overflow: hidden;">
+                <div class="container">
+                    <div class="top">
+                        <div class="post-item" data-aos="fade-right" data-aos-duration="700">
+                            <div class="post-thumb">
+                                <img src="~/DytIpekTemplate/EnviShare/assets/images/footer/icon/01.png" alt="footer">
+                            </div>
+                            <div class="post-content">
+                                <h6>İletişim Numarası</h6>
+                                <p>+90 531 505 29 49</p>
+                            </div>
+                        </div>
+                        <div class="post-item" data-aos="fade-up" data-aos-duration="700">
+                            <div class="post-thumb">
+                                <img src="~/DytIpekTemplate/EnviShare/assets/images/footer/icon/02.png" alt="footer">
+                            </div>
+                            <div class="post-content">
+                                <h6>Mail Adresi<h6>
+                                <p>dytipekbilal@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="post-item" data-aos="fade-left" data-aos-duration="700">
+                            <div class="post-thumb">
+                                <img src="~/DytIpekTemplate/EnviShare/assets/images/footer/icon/03.png" alt="footer">
+                            </div>
+                            <div class="post-content">
+                                <h6>İş Yeri Bilgileri</h6>
+                                <p>Cassaba modern B blok kat 2 daire 206 Tepebaşı/ESKİŞEHİR</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom row justify-content-center">
+                        
+                        <div class="col-xl-4 col-lg-6 col-12" data-aos="fade-up" data-aos-duration="700">
+                            <div class="bottom-item">
+                                <h4>Yemek Tarifleri</h4>
+                                <ul>
+                                    <li class="post-item">
+                                        <div class="post-thumb">
+                                            <a href="#"><img src="recipe.ImagePath.Replace("wwwroot/","")" alt="footer"></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6>
+                                                <a href="#">recipe.Name</a>
+                                            </h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-4 col-lg-6 col-12" data-aos="fade-left" data-aos-duration="700">
+                            <div class="bottom-item">
+                                <h4>Sizden Gelenler</h4>
+                                <ul class="footer-gallery">
+                                    <li>
+
+                                        <div class="post-thumb">
+                                            <a href="#"><img src="achievement.ImagePath.Replace("wwwroot/","")"" alt="footer-gallery"></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="section-wrapper">
+                        <div class="left">
+                            <span>&copy; 2019 <a href="index.html">EnviShare</a> Design by <a href="#">Labartisan.</a></span>
+                        </div>
+                        <ul class="right">
+                            <li>
+                                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <span>Facebook</span>
+                            </li>
+                            <li>
+                                <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+                                <span>Instagram</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end here -->
+    </div>
+
+    <!-- scroll to top -->
+    <a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <!-- scroll to top -->
+
+
+
+
+    
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/jquery.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/waypoints.min.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/bootstrap.min.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/fontawesome.min.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/isotope.pkgd.min.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/lightcase.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/swiper.min.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/progress.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/aos.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/wow.min.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/map-custom.js"></script>
+    <script src='~/DytIpekTemplate/EnviShare/assets/js/slick.min.js'></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/theia-sticky-sidebar.js"></script>
+    <script src="~/DytIpekTemplate/EnviShare/assets/js/functions.js"></script>
+</body>
+</html>

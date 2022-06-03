@@ -1,0 +1,37 @@
+﻿@model DiyetisyenIpekBilal.Models.Ingredients
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Ingredients</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IngredientsID" />
+            <div class="form-group">
+                <label asp-for="IngredientsName" class="control-label"></label>
+                <input asp-for="IngredientsName" class="form-control" />
+                <span asp-validation-for="IngredientsName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecipeID" class="control-label"></label>
+                <select asp-for="RecipeID" class="form-control" asp-items="ViewBag.RecipeID"></select>
+                <span asp-validation-for="RecipeID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

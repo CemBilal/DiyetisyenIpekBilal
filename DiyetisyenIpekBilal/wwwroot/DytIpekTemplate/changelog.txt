@@ -1,0 +1,9 @@
+Environmental Ecology Responsive Template
+
+Changelog:
+
+
+Version: 1.0.2  Date: 05-10-2019
+1. Add Home Page One variation
+2. Add Box Layout Homepage
+3. Add RTL Layout Homepage
